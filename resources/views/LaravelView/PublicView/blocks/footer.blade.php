@@ -84,5 +84,8 @@
 <script src="resources/assets/public/js/theia-sticky-sidebar.js"></script>
 <script src="resources/assets/public/js/main.js"></script>
 <!-- ------------End defaulf---------- -->
+<script src="resources/assets/storage/angular/angular.js"></script>
+<script src="resources/assets/public/newAngularjs/main.js"></script>
+  @yield('angularjs')
 </body>
 </html>

@@ -72,7 +72,7 @@
 			<div class="container">
 				<div class="logo-box haslayout">
 					<strong class="logo">
-						<a  ui-sref="/home">
+						<a  href="/home">
 							<img src="resources/assets/public/images/yesforme.jpg" alt="The Success BLOG for Real LifeStyle">
 						</a>
 					</strong>
@@ -94,16 +94,16 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li>
-								<a ui-sref="/home">Home</a>
+								<a href="/home">Home</a>
 							</li>
-							<li><a ui-sref="life">LifeStyle</a></li>
-							<li><a ui-sref="trip">Trip</a></li>
-							<li><a ui-sref="audio">Just Relax</a></li>
-							<li><a ui-sref="playlists">Playlists</a></li>
-							<li><a ui-sref="video">Videos</a></li>
-							<li><a ui-sref="history">Yes ! I write !</a></li>
-							<li><a ui-sref="historycollected">History in my eye</a></li>
-							<li><a ui-sref="images">Images</a></li>
+							<li><a href="life">LifeStyle</a></li>
+							<li><a href="trip">Trip</a></li>
+							<li><a href="audio">Just Relax</a></li>
+							<li><a href="playlists">Playlists</a></li>
+							<li><a href="video">Videos</a></li>
+							<li><a href="history">Yes ! I write !</a></li>
+							<li><a href="historycollected">History in my eye</a></li>
+							<li><a href="images">Images</a></li>
 						</ul>
 					</div>
 				</div>

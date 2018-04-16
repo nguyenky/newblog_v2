@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="resources/assets/public/css/responsive.css">
 	<script src="resources/assets/public/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<body>
+<body ng-app="app" ng-controller="mainController">
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -41,26 +41,26 @@
 					<div class="new-slides pull-left col-lg-4 col-md-5 col-sm-6 col-xs-6">
 						<div id="news-slider">
 							<div class="item">
-								<p>The Latest New For Your New Post</p>
+								<a href="" ng-click="redirec(latest[0])"><p>@{{latest[0].name | limitTo:50}}</p></a>
 							</div>
 							<div class="item">
-								<p>The Latest New For Your New Post</p>
+								<a href="" ng-click="redirec(latest[1])"><p>@{{latest[1].name | limitTo:50}}</p></a>
 							</div>
 							<div class="item">
-								<p>The Latest New For Your New Post</p>
+								<a href="" ng-click="redirec(latest[2])"><p>@{{latest[2].name | limitTo:50}}</p></a>
+							</div>
+							<div class="item">
+								<a href="" ng-click="redirec(latest[3])"><p>@{{latest[3].name | limitTo:50}}</p></a>
+							</div>
+							<div class="item">
+								<a href="" ng-click="redirec(latest[4])"><p>@{{latest[4].name | limitTo:50}}</p></a>
 							</div>
 						</div>
 					</div>
-					<div class="search-social pull-right">
+					<div class="search-social pull-right text-center">
 						<ul class="social-icon">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+							<li ><a href=""><i class="fa fa-facebook"></i></a></li>
 						</ul>
-						<a href="#" class="btn-search fa fa-search show_hide"></a>
 					</div>
 				</div>
 			</div>
@@ -94,48 +94,17 @@
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-							<li class="active">
-								<a href="index.html">Home</a>
-								<ul class="dropdown-menu">
-									<li><a href="index.html">Home</a></li>
-									<li class="active"><a href="index-slider.html">Home slider</a></li>
-									<li><a href="index-masonry.html">Home Masnory</a></li>
-									<li><a href="index-three-columns.html">Home Three Columns</a></li>
-									<li><a href="single.html">Single</a></li>
-									<li><a href="index-fixnav.html">Sticky Nav</a></li>
-								</ul>
-							</li>
-							<li><a href="aboutus.html">about us</a></li>
-							<li><a href="contactus.html">Contact</a></li>
 							<li>
-								<a href="#">Post Type</a>
-								<ul class="dropdown-menu">
-									<li><a href="simple-post.html">Post</a></li>
-									<li><a href="gallery-post.html">Gallery Poast</a></li>
-									<li><a href="slider-post.html">Slider Post</a></li>
-									<li><a href="video-post.html">Video Post</a></li>
-									<li><a href="audio-post.html">Audio Post</a></li>
-									<li><a href="img-blockquote-post.html">image Blockquote post</a></li>
-									<li><a href="blockquote-post.html">Blockquote post</a></li>
-									<li><a href="text-post.html">text post</a></li>
-								</ul>
+								<a ui-sref="/home">Home</a>
 							</li>
-							<li><a href="#">LifeStyle</a></li>
-							<li><a href="#">Style &amp; Beauty</a></li>
-							<li><a href="#">Home &amp; Living</a></li>
-							<li><a href="#">everyday life &amp; inspirations</a></li>
-							<li><a href="#">Travel</a></li>
-							<li class="dropdown">
-								<a href="#">Dropdown</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">LifeStyle</a></li>
-									<li><a href="#">Style &amp; Beauty</a></li>
-									<li><a href="#">Home &amp; Living</a></li>
-									<li><a href="#">everyday life &amp; inspirations</a></li>
-									<li><a href="#">Travel</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</li>
+							<li><a ui-sref="life">LifeStyle</a></li>
+							<li><a ui-sref="trip">Trip</a></li>
+							<li><a ui-sref="audio">Just Relax</a></li>
+							<li><a ui-sref="playlists">Playlists</a></li>
+							<li><a ui-sref="video">Videos</a></li>
+							<li><a ui-sref="history">Yes ! I write !</a></li>
+							<li><a ui-sref="historycollected">History in my eye</a></li>
+							<li><a ui-sref="images">Images</a></li>
 						</ul>
 					</div>
 				</div>
