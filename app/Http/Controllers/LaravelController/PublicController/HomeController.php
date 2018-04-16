@@ -86,4 +86,26 @@ class HomeController extends Controller
         ]);
     }
 
+    public function trip(){
+        $news = $this->newsRepository->getNewsSite(21);
+
+        return view('LaravelView.PublicView.sites.life',[
+            'news'=>$news
+        ]);
+    }
+    public function history(){
+        $news = $this->newsRepository->getNewsSite(31);
+
+        return view('LaravelView.PublicView.sites.life',[
+            'news'=>$news
+        ]);
+    }
+    public function historyCollected(){
+        $news = $this->newsRepository->getNewsSite(61);
+
+        return view('LaravelView.PublicView.sites.life',[
+            'news'=>$news
+        ]);
+    }
+
 }

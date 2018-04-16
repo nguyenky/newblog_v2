@@ -30,6 +30,10 @@ Route::group(['namespace'=>'LaravelController\PublicController'],function(){
 
   	Route::get('/','HomeController@home');
   	Route::get('/life','HomeController@life');
+  	Route::get('/trip','HomeController@trip');
+  	Route::get('/history','HomeController@history');
+  	Route::get('/history-collected','HomeController@historyCollected');
+  	Route::get('/life','HomeController@life');
 
 });
 

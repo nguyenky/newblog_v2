@@ -40,12 +40,16 @@
 	<hr />
 	<div style=" clear:both;"></div>
 	<div class=" col-md-12 row">
+		@if($news->currentPage() > 1)
 		<div class=" post-width site-post pull-left">
-			<span class="older-post"><a href="" ng-click="previus()">newer post</a></span>
+			<span class="older-post"><a href="{{$news->previousPageUrl()}}">newer post</a></span>
 		</div>
+		@endif
+		@if($news->currentPage() < $news->total())
 		<div class=" post-width site-post pull-right" >
-			<span class="older-post"><a href="" ng-click="loadMore()">older post</a></span>
+			<span class="older-post"><a href="{{$news->nextPageUrl()}}">older post</a></span>
 		</div>
+		@endif
 	</div>
 </div>
 @endsection
