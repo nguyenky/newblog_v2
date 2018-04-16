@@ -108,4 +108,8 @@ class NewsRepository extends BaseRepository
         }
         return $categories->toArray();
     }
+    public function getNewsSite($id){
+        $news = $this->model->where('category_id',$id)->paginate(9);
+        return $news;
+    }
 }

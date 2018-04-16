@@ -29,6 +29,7 @@ Route::group(['namespace'=>'LaravelController\PublicController'],function(){
 	Route::post('/upload','HomeController@upload')->name('upload');
 
   	Route::get('/','HomeController@home');
+  	Route::get('/life','HomeController@life');
 
 });
 
