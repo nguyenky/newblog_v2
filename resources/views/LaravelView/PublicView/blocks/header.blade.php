@@ -101,7 +101,7 @@
 							<li><a href="/trip">Trip</a></li>
 							<li><a href="/audio">Just Relax</a></li>
 							<li><a href="/playlists">Playlists</a></li>
-							<li><a href="/video">Videos</a></li>
+							<li><a href="/videos">Videos</a></li>
 							<li><a href="/history">Yes ! I write !</a></li>
 							<li><a href="/historycollected">History in my eye</a></li>
 							<li><a href="/images">Images</a></li>
