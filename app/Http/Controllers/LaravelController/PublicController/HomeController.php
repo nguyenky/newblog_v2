@@ -121,5 +121,21 @@ class HomeController extends Controller
             'news'=>$news
         ]);
     }
+    public function playlists(){
+        $news = \App\Models\Playlist::all();
+        // dd($news);
+
+        return view('LaravelView.PublicView.sites.playlist',[
+            'news'=>$news
+        ]);
+    }
+    public function images(){
+        $images = \App\Models\Post::all();
+
+
+        return view('LaravelView.PublicView.sites.image',[
+            'images'=>$images
+        ]);
+    }
 
 }
