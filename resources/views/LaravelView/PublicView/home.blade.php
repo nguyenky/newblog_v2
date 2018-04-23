@@ -48,7 +48,7 @@
 				<div class="post-meta category-name">
 					<span><a href="">video</a></span>
 				</div>
-				<h3><a href="">{{$news[4]['new']['name']}}</a></h3>
+				<h3><ahref="{{route('detail',['id'=>$news[0]['new']['id']])}}">{{$news[4]['new']['name']}}</a></h3>
 				<div class="post-meta">
 					<span class="date">{{$news[4]['new']['created_at']}}</span>
 				</div>
@@ -83,14 +83,14 @@
 				<div class="post-meta category-name">
 					<span><a href="">Chilhood</a></span>
 				</div>
-				<h3><a href="" >{{$news[1]['new']['name']}}</a></h3>
+				<h3><a href="{{route('detail',['id'=>$news[1]['new']['id']])}}">{{$news[1]['new']['name']}}</a></h3>
 				<div class="post-meta">
 					<span class="date">{{$news[1]['new']['created_at']}}</span>
 				</div>
 				<div class="description">
 					<p>{{$news[1]['new']['preview']}}</p>		
 				</div>
-				<a href="" class="tg-btn-countinuereading">countinue reading</a>
+				<a href="{{route('detail',['id'=>$news[1]['new']['id']])}}" class="tg-btn-countinuereading">countinue reading</a>
 				<div class="tg-post-foot">
 					<ul class="post-social-icons">
 						<li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -119,14 +119,14 @@
 				<div class="post-meta category-name">
 					<span><a href="">TRIP</a></span>
 				</div>
-				<h3><a href="" >{{$news[2]['new']['name']}}</a></h3>
+				<h3><a href="{{route('detail',['id'=>$news[2]['new']['id']])}}" >{{$news[2]['new']['name']}}</a></h3>
 				<div class="post-meta">
 					<span class="date">{{$news[2]['new']['created_at']}}</span>
 				</div>
 				<div class="description">
 					<p>{{$news[2]['new']['preview']}}</p>		
 				</div>
-				<a href="" class="tg-btn-countinuereading">countinue reading</a>
+				<a href="{{route('detail',['id'=>$news[2]['new']['id']])}}" class="tg-btn-countinuereading">countinue reading</a>
 				<div class="tg-post-foot">
 					<ul class="post-social-icons">
 						<li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -184,14 +184,14 @@
 				<div class="post-meta category-name">
 					<span><a href="">HISTORY</a></span>
 				</div>
-				<h3><a href="" >{{$news[3]['new']['name']}}</a></h3>
+				<h3><a href="{{route('detail',['id'=>$news[3]['new']['id']])}}" >{{$news[3]['new']['name']}}</a></h3>
 				<div class="post-meta">
 					<span class="date">{{$news[3]['new']['created_at']}}</span>
 				</div>
 				<div class="description">
 					<p>{{$news[3]['new']['preview']}}</p>		
 				</div>
-				<a href="" class="tg-btn-countinuereading">countinue reading</a>
+				<a href="{{route('detail',['id'=>$news[3]['new']['id']])}}" class="tg-btn-countinuereading">countinue reading</a>
 				<div class="tg-post-foot">
 					<ul class="post-social-icons">
 						<li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -220,14 +220,14 @@
 				<div class="post-meta category-name">
 					<span><a href="">HISTORY COLLECTED</a></span>
 				</div>
-				<h3><a href="" >{{$news[6]['new']['name']}}</a></h3>
+				<h3><a href="{{route('detail',['id'=>$news[6]['new']['id']])}}" >{{$news[6]['new']['name']}}</a></h3>
 				<div class="post-meta">
 					<span class="date">{{$news[6]['new']['created_at']}}</span>
 				</div>
 				<div class="description">
 					<p>{{$news[6]['new']['preview']}}</p>		
 				</div>
-				<a href="" class="tg-btn-countinuereading">countinue reading</a>
+				<a href="{{route('detail',['id'=>$news[6]['new']['id']])}}" class="tg-btn-countinuereading">countinue reading</a>
 				<div class="tg-post-foot">
 					<ul class="post-social-icons">
 						<li><a href=""><i class="fa fa-facebook"></i></a></li>

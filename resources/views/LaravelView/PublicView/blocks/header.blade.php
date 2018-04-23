@@ -68,7 +68,7 @@
 			<div class="container">
 				<div class="logo-box haslayout">
 					<strong class="logo">
-						<a  href="/v2">
+						<a  href="/">
 							<img src="resources/assets/public/images/yesforme.jpg" alt="The Success BLOG for Real LifeStyle">
 						</a>
 					</strong>
@@ -95,7 +95,7 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li>
-								<a href="/home">Home</a>
+								<a href="/">Home</a>
 							</li>
 							<li><a href="/life">LifeStyle</a></li>
 							<li><a href="/trip">Trip</a></li>

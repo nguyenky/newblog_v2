@@ -20,7 +20,7 @@ class ShareController extends Controller
     return $status;
   }
   public function categories(){
-    $categories = Category::orderBy('id','DESC')->select('id','name')->with('news')->get();
+    $categories = Category::orderBy('id','DESC')->where('id','<>',41)->where('id','<>',51)->select('id','name')->with('news')->get();
     return $categories;
   }
   public function profile(){

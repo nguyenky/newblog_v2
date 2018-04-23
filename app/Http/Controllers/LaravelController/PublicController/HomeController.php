@@ -107,6 +107,36 @@ class HomeController extends Controller
             'news'=>$news
         ]);
     }
+    public function playlists(){
+        $news = \App\Models\Playlist::all();
+        // dd($news);
+
+        return view('LaravelView.PublicView.sites.playlist',[
+            'news'=>$news
+        ]);
+    }
+    public function images(){
+        $images = \App\Models\Post::all();
+
+
+        return view('LaravelView.PublicView.sites.image',[
+            'images'=>$images
+        ]);
+    }
+    public function audio(){
+        $news = $this->newsRepository->getNewsSite(51);
+
+        return view('LaravelView.PublicView.sites.audio',[
+            'news'=>$news
+        ]);
+    }
+    public function videos(){
+        $news = $this->newsRepository->getNewsSite(41);
+
+        return view('LaravelView.PublicView.sites.video',[
+            'news'=>$news
+        ]);
+    }
     public function detail($id){
         $new = News::find($id);
         $new->comments;
