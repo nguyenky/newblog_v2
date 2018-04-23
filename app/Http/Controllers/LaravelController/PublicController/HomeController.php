@@ -107,5 +107,9 @@ class HomeController extends Controller
             'news'=>$news
         ]);
     }
+    public function detail($id){
+        $new = News::find($id);
+        dd($new);
+    }
 
 }
