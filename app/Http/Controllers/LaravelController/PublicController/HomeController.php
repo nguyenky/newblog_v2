@@ -109,7 +109,8 @@ class HomeController extends Controller
     }
     public function detail($id){
         $new = News::find($id);
-        dd($new);
+        $new->comments;
+        dd($new->toArray());
     }
 
 }
