@@ -114,8 +114,8 @@ class NewsRepository extends BaseRepository
     }
     public function detail($id){
 
-        $new = $this->model->find($id)->with('comments')->first();
-        
+        $new = $this->model->find($id)->first();
+
         return $new;
     }
 }
