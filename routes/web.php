@@ -37,6 +37,7 @@ Route::group(['namespace'=>'LaravelController\PublicController'],function(){
   	Route::get('/videos','HomeController@videos');
   	Route::get('/playlists','HomeController@playlists');
   	Route::get('/images','HomeController@images');
+  	Route::get('/{id}','HomeController@detail')->name('detail');
 
 });
 

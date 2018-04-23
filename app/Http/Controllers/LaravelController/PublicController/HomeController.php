@@ -137,5 +137,12 @@ class HomeController extends Controller
             'images'=>$images
         ]);
     }
+    public function detail($id){
+        $new = $this->newsRepository->detail($id);
+
+        return view('LaravelView.PublicView.sites.detail',[
+            'new'=>$new
+        ]);
+    }
 
 }
