@@ -110,7 +110,9 @@ class HomeController extends Controller
     public function detail($id){
         $new = News::find($id);
         $new->comments;
-        dd($new->toArray());
+        return view('LaravelView.PublicView.sites.detail',[
+            'new'=>$new
+        ]);
     }
 
 }

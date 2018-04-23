@@ -15,7 +15,7 @@
 			</figure>
 			<div class="tg-post-content">
 				<div  class="name-post">
-					<h5><a href="" >{{$new->name}}</a></h5>
+					<h5><a href="{{route('detail',['id'=>$new->id])}}" >{{$new->name}}</a></h5>
 				</div>
 				
 				<div class="post-meta">

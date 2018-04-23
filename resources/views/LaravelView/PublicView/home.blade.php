@@ -18,14 +18,14 @@
 				<div class="post-meta category-name">
 					<span><a href="">LifeStyle</a></span>
 				</div>
-				<h3><a href="" >{{$news[0]['new']['name']}}</a></h3>
+				<h3><a href="{{route('detail',['id'=>$news[0]['new']['id']])}}" >{{$news[0]['new']['name']}}</a></h3>
 				<div class="post-meta">
 					<span class="date">{{$news[0]['new']['created_at']}}</span>
 				</div>
 				<div class="description">
 					<p>{{$news[0]['new']['preview']}}</p>			
 				</div>
-				<a href="" class="tg-btn-countinuereading" ng-click="redirec(life)">countinue reading</a>
+				<a href="{{route('detail',['id'=>$news[0]['new']['id']])}}" class="tg-btn-countinuereading">countinue reading</a>
 				<div class="tg-post-foot">
 					<ul class="post-social-icons">
 						<li><a href=""><i class="fa fa-facebook"></i></a></li>
