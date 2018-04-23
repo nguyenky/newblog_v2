@@ -112,10 +112,4 @@ class NewsRepository extends BaseRepository
         $news = $this->model->where('category_id',$id)->with('comments')->paginate(1);
         return $news;
     }
-    public function detail($id){
-
-        $new = $this->model->find($id)->first();
-
-        return $new;
-    }
 }
