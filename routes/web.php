@@ -96,7 +96,7 @@ Route::get('/update',function(){
 	// dd($news);
 });
 
-Route::get('getcode',function(Request $request){
+Route::get('ebay',function(Request $request){
 	$input = $request->all();
 	dd($input);
 });
